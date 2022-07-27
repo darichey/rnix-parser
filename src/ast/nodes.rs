@@ -231,6 +231,10 @@ impl Attrpath {
 
 node! { #[from(NODE_DYNAMIC)] struct Dynamic; }
 
+impl Dynamic {
+    ng! { expr, Expr, 0 }
+}
+
 node! { #[from(NODE_ERROR)] struct Error; }
 
 node! { #[from(NODE_IF_ELSE)] struct IfElse; }
